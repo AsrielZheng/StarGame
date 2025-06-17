@@ -172,3 +172,7 @@ void bulletHit(){
             tempIndex++;
           }
         }
+        Bballs = newBballs;
+        
+        bulletHasHit = true;
+        break;     
