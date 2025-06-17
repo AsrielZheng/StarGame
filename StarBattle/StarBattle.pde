@@ -266,4 +266,8 @@ void createBall(){
   for(int i = 0; i < Bballs.length; i++){
     blist.add(Bballs[i]);
   }
+
+  if(gameTimer < 600){
+    slist.add(new SBall());
+  }
   
