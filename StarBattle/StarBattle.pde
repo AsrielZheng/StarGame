@@ -312,4 +312,8 @@ void resetGame() {
   spaceship.position.x = width/2;
   gameState = 1;
 }
-  
+
+void mousePressed() {
+    if(gameState == 1) {
+  if(mouseButton == LEFT) {
+    if (frameCount - 0 > 30) {
