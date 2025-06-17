@@ -320,3 +320,15 @@ void mousePressed() {
      bullets.add(new Bullet(new PVector(spaceship.position.x -6, spaceship.position.y - 60)));
     spaceship.canMove = false;
     shootSound.play();
+        }
+  }
+  }
+      else if(gameState == 0) {
+    if(menu.mouseIsOverButton) {
+      menuMusic.stop();
+      musicRate = 1;
+      battleMusic.loop(musicRate, 1, 0, 0);
+      gameState = 1;
+  }
+}
+  }
