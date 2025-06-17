@@ -26,3 +26,12 @@ class GameMenu {
     text("•   Left Mouse Click to Shoot", 50, 175);
     text("•   Game Over if you are hit", 50, 200);
     text("•   Game Over if you miss 3 balls", 50, 225);
+    
+    textAlign(CENTER, CENTER);
+    text("Shoot These:", width/2, 255);
+    fill(181, 147, 48);
+    circle(150, 285, 30);
+    fill(181, 147, 48);
+    circle(200, 285, 20);
+    fill(181, 147, 48);
+    circle(250, 285, 15);
