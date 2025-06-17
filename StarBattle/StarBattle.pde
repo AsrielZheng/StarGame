@@ -220,3 +220,11 @@ void bulletHit(){
       bullets.remove(i);
       continue;
     }
+    
+    for (int j = Sballs.length - 1; j >= 0; j--) {
+      SBall sball = Sballs[j];
+      float distance = dist(bulletCenterX, bulletCenterY, sball.location.x, sball.location.y);
+      if(distance < bulletRadius + (sball.size / 2)) {
+        score += 1;
+        
+        hitSound.play();
