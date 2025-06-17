@@ -309,3 +309,7 @@ void resetGame() {
   Sballs = new SBall[0];
   bullets.clear();
   
+  spaceship.position.x = width/2;
+  gameState = 1;
+}
+  
