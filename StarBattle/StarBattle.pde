@@ -87,4 +87,7 @@ void runGame(){
     b.update();
     b.display();
     
+    if(b.position.y < -30) {
+      bullets.remove(i);
+    }
   }
