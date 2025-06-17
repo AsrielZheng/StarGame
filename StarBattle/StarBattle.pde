@@ -188,3 +188,8 @@ void bulletHit(){
       MBall mball = Mballs[j];
       float distance = dist(bulletCenterX, bulletCenterY, mball.location.x, mball.location.y);
       if(distance < bulletRadius + (mball.size / 2)) {
+        
+        SBall[] newSballs = new SBall[Sballs.length + 1];
+        for(int k = 0; k < Sballs.length; k++) {
+          newSballs[k] = Sballs[k];
+        }
