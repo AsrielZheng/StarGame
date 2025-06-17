@@ -17,3 +17,12 @@ class GameMenu {
     fill(255);
     textSize(40);
     text("Star Battle", 200, 50);
+    
+    textSize(18);
+    text("Instructions", 200, 110);
+
+    textAlign(LEFT, CENTER);
+    text("•   A / D Keys to Move", 50, 150);
+    text("•   Left Mouse Click to Shoot", 50, 175);
+    text("•   Game Over if you are hit", 50, 200);
+    text("•   Game Over if you miss 3 balls", 50, 225);
