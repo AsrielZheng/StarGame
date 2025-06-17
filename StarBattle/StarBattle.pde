@@ -7,8 +7,8 @@ SoundFile battleMusic;
 
  Star[] stars = new Star[40];
 
-
-  SBall[] Sballs = new SBall[0];
+ BBall[] Bballs = new BBall[0];
+ SBall[] Sballs = new SBall[0];
 void setup() {
   size(400, 400);
   
