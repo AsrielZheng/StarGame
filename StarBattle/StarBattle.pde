@@ -81,3 +81,10 @@ void runGame(){
   
    spaceship.update();
    spaceship.display(lives);
+   
+      for (int i = bullets.size() - 1; i >= 0; i--) {
+    Bullet b = bullets.get(i);
+    b.update();
+    b.display();
+    
+  }
