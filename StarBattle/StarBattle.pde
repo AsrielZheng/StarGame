@@ -154,3 +154,12 @@ void bulletHit(){
     
     if(distance < bulletRadius + (bball.size / 2)) {
     hitSound.play();
+    
+    
+    MBall[] newMballs = new MBall[Mballs.length + 1];
+        for(int k = 0; k < Mballs.length; k++) {
+          newMballs[k] = Mballs[k];
+        }
+        MBall newBall = new MBall(bball.location.x, bball.location.y, bball.velocity);
+        newMballs[newMballs.length - 1] = newBall;
+        Mballs = newMballs;
