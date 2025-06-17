@@ -72,3 +72,12 @@ void runGame(){
     musicRate = constrain(musicRate, 1, MAX_MUSIC_RATE);
     battleMusic.rate(musicRate);
   }
+  
+    textAlign(RIGHT, TOP);
+  text("Score: " + score, width - 10, 10);
+  
+  
+  gameTimer++;
+  
+   spaceship.update();
+   spaceship.display(lives);
