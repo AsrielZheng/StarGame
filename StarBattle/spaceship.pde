@@ -29,6 +29,15 @@ class spaceship {
     noStroke();
     fill(255, 255, 0);
     
+        if (currentLives >= 1) {
+      circle(0, -10, 8);
+    } 
+    if (currentLives >= 2) {
+      circle(0, 0, 8);
+    }
+    if (currentLives >= 3) {
+      circle(0, +10, 8);
+    }
     popMatrix();
   }
 }
