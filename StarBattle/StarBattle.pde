@@ -199,3 +199,19 @@ void bulletHit(){
         Sballs = newSballs;
         
         hitSound.play();
+
+
+        MBall[] newMballs = new MBall[Mballs.length - 1];
+        int tempIndex = 0;
+        for(int k = 0; k < Mballs.length; k++) {
+          if(k != j) {
+            newMballs[tempIndex] = Mballs[k];
+            tempIndex++;
+          }
+        }
+        Mballs = newMballs;
+
+        bulletHasHit = true;
+        break;
+      }
+    }
