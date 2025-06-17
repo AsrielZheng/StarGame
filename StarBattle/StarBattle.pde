@@ -293,3 +293,8 @@ void createBall(){
     }
   }
   
+  Sballs = slist.toArray(new SBall[0]);
+  Mballs = mlist.toArray(new MBall[0]);
+  Bballs = blist.toArray(new BBall[0]);
+}
+  
