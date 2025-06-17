@@ -270,4 +270,12 @@ void createBall(){
   if(gameTimer < 600){
     slist.add(new SBall());
   }
+
+  else if(gameTimer < 1200){
+    if(random(1) < 0.5){
+      slist.add(new SBall());
+    } else {
+      mlist.add(new MBall());
+    } 
+  }
   
