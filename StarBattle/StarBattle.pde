@@ -243,3 +243,9 @@ void bulletHit(){
         break;
       }
     }
+    
+    if(bulletHasHit) {
+      bullets.remove(i);
+    }
+  }
+}
