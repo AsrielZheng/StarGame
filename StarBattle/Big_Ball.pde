@@ -1,4 +1,4 @@
-class SBall {
+class BBall {
   float size = 100;
   PVector location = new PVector (random(size, width - size), random(-150, -50)); 
   PVector velocity = new PVector(0,50);
