@@ -1,3 +1,10 @@
+import processing.sound.*;
+
+SoundFile shootSound; 
+SoundFile hitSound; 
+SoundFile menuMusic; 
+SoundFile battleMusic;
+
 void setup() {
   size(400, 400);
 }
