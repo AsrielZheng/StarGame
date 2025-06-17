@@ -228,3 +228,18 @@ void bulletHit(){
         score += 1;
         
         hitSound.play();
+        
+        SBall[] newSballs = new SBall[Sballs.length - 1];
+        int tempIndex = 0;
+        for(int k = 0; k < Sballs.length; k++) {
+          if(k != j) {
+            newSballs[tempIndex] = Sballs[k];
+            tempIndex++;
+          }
+        }
+        Sballs = newSballs;
+
+        bulletHasHit = true;
+        break;
+      }
+    }
