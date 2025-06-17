@@ -193,3 +193,9 @@ void bulletHit(){
         for(int k = 0; k < Sballs.length; k++) {
           newSballs[k] = Sballs[k];
         }
+
+        SBall newBall = new SBall(mball.location.x, mball.location.y, mball.velocity);
+        newSballs[newSballs.length - 1] = newBall;
+        Sballs = newSballs;
+        
+        hitSound.play();
