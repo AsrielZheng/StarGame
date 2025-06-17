@@ -150,3 +150,7 @@ void bulletHit(){
     for(int j = Bballs.length - 1; j >= 0; j--) {
     BBall bball = Bballs[j]; 
     float distance = dist(bulletCenterX, bulletCenterY, bball.location.x, bball.location.y);
+    
+    
+    if(distance < bulletRadius + (bball.size / 2)) {
+    hitSound.play();
