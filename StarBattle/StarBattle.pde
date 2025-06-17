@@ -104,3 +104,7 @@ void runGame(){
       bullets.remove(i);
     }
   }
+  
+     if(frameCount % 120 == 0 && gameState == 1) {
+    createBall();
+  }
