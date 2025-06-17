@@ -183,3 +183,8 @@ void bulletHit(){
       bullets.remove(i);
       continue;
     }
+   
+    for(int j = Mballs.length - 1; j >= 0; j--) {
+      MBall mball = Mballs[j];
+      float distance = dist(bulletCenterX, bulletCenterY, mball.location.x, mball.location.y);
+      if(distance < bulletRadius + (mball.size / 2)) {
