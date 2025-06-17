@@ -8,4 +8,12 @@ class GameMenu {
   
   boolean mouseIsOverButton = false;
   
-  
+   void display() {
+    
+    fill(28, 37, 60, 200);
+    rect(0, 0, width, height);
+   
+    textAlign(CENTER, CENTER);
+    fill(255);
+    textSize(40);
+    text("Star Battle", 200, 50);
