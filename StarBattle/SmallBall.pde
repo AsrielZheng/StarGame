@@ -25,8 +25,10 @@ void update() {
   }
   }
   if(location.y > height + size){
+    lives--;
     location.y = -size;
     location.x = random(size, width - size);
+    if (lives <= 0) gameState = 2;
   }
 }
 
