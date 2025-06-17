@@ -5,6 +5,8 @@ class spaceship {
   boolean canMove = true;
   float startX = 200;
   float startY = 350;
+  float size = 20;
+  
   PVector position = new PVector(startX, startY);
   
   void update() {
@@ -12,3 +14,5 @@ class spaceship {
       if(moveL) position.x -= speed;
       if(moveR) position.x += speed;
     }
+    position.x = constrain(position.x, 50, 350);
+  }
