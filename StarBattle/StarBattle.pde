@@ -142,3 +142,7 @@ void bulletHit(){
     for(int i = bullets.size() - 1; i >= 0; i--) {
     Bullet bullet = bullets.get(i);
     boolean bulletHasHit = false;
+    
+    float bulletCenterX = bullet.position.x + 5;
+    float bulletCenterY = bullet.position.y + 15;
+    float bulletRadius = 5; 
