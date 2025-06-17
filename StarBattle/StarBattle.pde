@@ -352,3 +352,8 @@ void keyPressed() {
     }
   }
 }
+
+void keyReleased(){
+  if(key == 'a' || key == 'A') spaceship.moveL = false;
+  if(key == 'd' || key == 'D') spaceship.moveR = false;
+}
