@@ -304,3 +304,8 @@ void resetGame() {
   lives = 3;
   gameTimer = 0;
   
+   Bballs = new BBall[0];
+  Mballs = new MBall[0];
+  Sballs = new SBall[0];
+  bullets.clear();
+  
