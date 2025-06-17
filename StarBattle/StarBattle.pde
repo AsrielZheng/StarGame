@@ -5,6 +5,15 @@ SoundFile hitSound;
 SoundFile menuMusic; 
 SoundFile battleMusic;
 
+GameMenu menu;
+GameOverScreen gameOverScreen;
+
+  int STATE_MENU = 0;
+  int STATE_PLAYING = 1;
+  int STATE_GAME_OVER = 2;
+  int gameState = 0; 
+  
+
  Star[] stars = new Star[40];
 
  BBall[] Bballs = new BBall[0];
