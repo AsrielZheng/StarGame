@@ -338,3 +338,7 @@ void mousePressed() {
     spaceship.canMove = true;
   }
 }
+
+void keyPressed() {
+  if(key == 'a' || key == 'A') spaceship.moveL = true;
+  if(key == 'd' || key == 'D') spaceship.moveR = true;
