@@ -146,3 +146,7 @@ void bulletHit(){
     float bulletCenterX = bullet.position.x + 5;
     float bulletCenterY = bullet.position.y + 15;
     float bulletRadius = 5; 
+    
+    for(int j = Bballs.length - 1; j >= 0; j--) {
+    BBall bball = Bballs[j]; 
+    float distance = dist(bulletCenterX, bulletCenterY, bball.location.x, bball.location.y);
