@@ -5,3 +5,14 @@ class Bullet{
    Bullet(PVector location) {
     position = location.copy();
   }
+  
+    void update(){
+    position.y -= speed;
+  }
+  
+  void display() {
+    fill(105, 255, 71);
+    noStroke();
+    rect(position.x, position.y, 10, 30);
+  }
+}
