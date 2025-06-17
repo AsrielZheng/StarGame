@@ -48,4 +48,14 @@ void draw(){
     stars[i].fall();
     stars[i].show();
   }
+    if (gameState == 0) {
+    menu.display();
+  } else if(gameState == 1) {
+    runGame();
+  } else if(gameState == 2) {
+    runGame();
+    gameOverScreen.display();
+  }
+  
+}
 }
