@@ -28,6 +28,9 @@ GameOverScreen gameOverScreen;
   
     ArrayList<Bullet> bullets = new ArrayList<Bullet>();
 
+  boolean hit = false;
+  boolean gameOver = false;
+  boolean ballUpdate = true;
   
 void setup() {
   size(400, 400);
