@@ -13,6 +13,17 @@ class SBall {
   }
 
 void update() {
+  
+    float elapsed = 1/frameRate;
+  if (gameState == 1) {  
+
+    location.add(PVector.mult(velocity, elapsed));
+
+        if (gameTimer > 600) {
+
+      velocity.add(PVector.mult(acceleration, elapsed));
+  }
+  }
   if(location.y > height + size){
     location.y = -size;
     location.x = random(size, width - size);
