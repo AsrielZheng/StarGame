@@ -35,3 +35,12 @@ class GameMenu {
     circle(200, 285, 20);
     fill(181, 147, 48);
     circle(250, 285, 15);
+    
+   checkMouseOverButton(); 
+   
+    if (mouseIsOverButton) {
+      fill(0, 200, 0);
+    } 
+    else {
+      fill(0, 150, 0);
+  }
