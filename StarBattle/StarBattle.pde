@@ -342,3 +342,13 @@ void mousePressed() {
 void keyPressed() {
   if(key == 'a' || key == 'A') spaceship.moveL = true;
   if(key == 'd' || key == 'D') spaceship.moveR = true;
+  
+    else if(gameState == 2) {
+    if(key == 'r' || key == 'R') {
+      battleMusic.stop();
+      resetGame();
+      gameState = 0; 
+      menuMusic.loop();
+    }
+  }
+}
