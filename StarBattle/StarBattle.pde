@@ -26,6 +26,9 @@ GameOverScreen gameOverScreen;
   
   spaceship spaceship;
   
+    ArrayList<Bullet> bullets = new ArrayList<Bullet>();
+
+  
 void setup() {
   size(400, 400);
   
