@@ -34,3 +34,8 @@ void update() {
     fill(181, 147, 48);
     circle(location.x, location.y, size);
     }
+    
+boolean hits(spaceship s){
+    float distance = dist(location.x, location.y, s.position.x, s.position.y); 
+    return (distance < (size / 2) + 15); 
+}
