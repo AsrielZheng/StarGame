@@ -12,7 +12,10 @@ void setup() {
   hitSound = new SoundFile(this, "hit.wav");
   menuMusic = new SoundFile(this, "menumusic.wav");
   battleMusic = new SoundFile(this, "battlemusic.wav");
+  
+  menuMusic.loop();
 }
+
 
 void draw(){
   background(28, 37, 60);
