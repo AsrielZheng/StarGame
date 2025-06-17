@@ -4,6 +4,13 @@ class SBall {
   PVector velocity = new PVector(0,50);
   PVector acceleration = new PVector(0, 2);
   
+  SBall() {
+  }
+  
+  SBall(float x, float y, PVector initialVelocity) {
+    location = new PVector(x, y);
+    velocity = initialVelocity.copy(); 
+  }
 
 void update() {
   if(location.y > height + size){
