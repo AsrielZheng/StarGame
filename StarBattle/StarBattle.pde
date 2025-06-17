@@ -175,4 +175,11 @@ void bulletHit(){
         Bballs = newBballs;
         
         bulletHasHit = true;
-        break;     
+        break;
+      }
+    }
+
+    if(bulletHasHit) {
+      bullets.remove(i);
+      continue;
+    }
