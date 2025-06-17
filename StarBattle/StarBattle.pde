@@ -257,3 +257,13 @@ void createBall(){
   ArrayList<BBall> blist = new ArrayList<BBall>();
   
   
+    for(int i = 0; i < Sballs.length; i++){
+    slist.add(Sballs[i]);
+  }
+  for(int i = 0; i < Mballs.length; i++){
+    mlist.add(Mballs[i]);
+  }
+  for(int i = 0; i < Bballs.length; i++){
+    blist.add(Bballs[i]);
+  }
+  
