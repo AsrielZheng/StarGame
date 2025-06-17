@@ -44,3 +44,11 @@ class GameMenu {
     else {
       fill(0, 150, 0);
   }
+  
+    rect(buttonX, buttonY, buttonW, buttonH, 10);
+
+    fill(255);
+    textSize(24);
+    textAlign(CENTER, CENTER);
+    text("START GAME", 200, buttonY + buttonH/2);
+  }
