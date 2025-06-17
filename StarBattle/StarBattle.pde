@@ -9,6 +9,8 @@ SoundFile battleMusic;
 
  BBall[] Bballs = new BBall[0];
  SBall[] Sballs = new SBall[0];
+ MBall[] Mballs = new MBall[0];
+ 
 void setup() {
   size(400, 400);
   
