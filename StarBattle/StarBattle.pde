@@ -279,3 +279,17 @@ void createBall(){
     } 
   }
   
+    else{
+    float r = random(1); 
+
+    if(r < 0.33) {
+      slist.add(new SBall());
+    }
+    else if(r < 0.66){
+      mlist.add(new MBall());
+    }
+    else{
+      blist.add(new BBall());
+    }
+  }
+  
