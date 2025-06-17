@@ -163,3 +163,12 @@ void bulletHit(){
         MBall newBall = new MBall(bball.location.x, bball.location.y, bball.velocity);
         newMballs[newMballs.length - 1] = newBall;
         Mballs = newMballs;
+        
+        BBall[] newBballs = new BBall[Bballs.length - 1];
+        int tempIndex = 0;
+        for(int k = 0; k < Bballs.length; k++) {
+          if (k != j) {
+            newBballs[tempIndex] = Bballs[k];
+            tempIndex++;
+          }
+        }
