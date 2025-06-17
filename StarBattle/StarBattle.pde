@@ -108,3 +108,27 @@ void runGame(){
      if(frameCount % 120 == 0 && gameState == 1) {
     createBall();
   }
+  
+    for(int i = 0 ; i < Bballs.length; i++) {
+    Bballs[i].update();
+    Bballs[i].display();
+    if(Bballs[i].hits(spaceship)) {
+      gameState = 2;
+  }
+  }
+  
+      for(int i = 0 ; i < Mballs.length; i++) {
+    Mballs[i].update();
+    Mballs[i].display();
+    if(Mballs[i].hits(spaceship)) {
+      gameState = 2;
+    }
+  }
+  
+    for(int i = 0 ; i < Sballs.length; i++) {
+    Sballs[i].update();
+    Sballs[i].display();
+    if(Sballs[i].hits(spaceship)) {
+      gameState = 2;
+    }
+  }
