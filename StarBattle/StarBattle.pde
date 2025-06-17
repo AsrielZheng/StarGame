@@ -249,3 +249,11 @@ void bulletHit(){
     }
   }
 }
+
+void createBall(){
+
+  ArrayList<SBall> slist = new ArrayList<SBall>();
+  ArrayList<MBall> mlist = new ArrayList<MBall>();
+  ArrayList<BBall> blist = new ArrayList<BBall>();
+  
+  
