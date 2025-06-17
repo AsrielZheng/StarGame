@@ -297,4 +297,10 @@ void createBall(){
   Mballs = mlist.toArray(new MBall[0]);
   Bballs = blist.toArray(new BBall[0]);
 }
+
+void resetGame() {
+
+  score = 0;
+  lives = 3;
+  gameTimer = 0;
   
