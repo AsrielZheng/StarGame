@@ -32,6 +32,13 @@ GameOverScreen gameOverScreen;
   boolean gameOver = false;
   boolean ballUpdate = true;
   
+  
+    int lives = 3;
+  int lastShotTime = 0;
+  int SHOOT_DELAY = 30;
+  int gameTimer = 0;
+  int score = 0;
+  
 void setup() {
   size(400, 400);
   
