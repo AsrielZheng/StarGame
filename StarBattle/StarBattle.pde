@@ -132,3 +132,13 @@ void runGame(){
       gameState = 2;
     }
   }
+  
+    bulletHit();
+}
+
+
+void bulletHit(){
+  
+    for(int i = bullets.size() - 1; i >= 0; i--) {
+    Bullet bullet = bullets.get(i);
+    boolean bulletHasHit = false;
