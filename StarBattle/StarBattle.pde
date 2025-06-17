@@ -9,12 +9,17 @@ SoundFile battleMusic;
 
  BBall[] Bballs = new BBall[0];
  SBall[] Sballs = new SBall[0];
+ MBall[] Mballs = new MBall[0];
+ 
+spaceship spaceship;
 void setup() {
   size(400, 400);
   
     for(int i = 0; i < stars.length; i++) {
     stars[i] = new Star();
   }
+  
+  spaceship = new spaceship();
   
   shootSound = new SoundFile(this, "shoot.wav"); 
   hitSound = new SoundFile(this, "hit.wav");
