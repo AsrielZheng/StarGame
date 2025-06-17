@@ -332,3 +332,9 @@ void mousePressed() {
   }
 }
   }
+  
+  void mouseReleased() {
+  if(mouseButton == LEFT) {
+    spaceship.canMove = true;
+  }
+}
