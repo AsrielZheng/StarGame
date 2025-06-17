@@ -317,3 +317,6 @@ void mousePressed() {
     if(gameState == 1) {
   if(mouseButton == LEFT) {
     if (frameCount - 0 > 30) {
+     bullets.add(new Bullet(new PVector(spaceship.position.x -6, spaceship.position.y - 60)));
+    spaceship.canMove = false;
+    shootSound.play();
