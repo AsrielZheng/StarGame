@@ -5,6 +5,10 @@ SoundFile hitSound;
 SoundFile menuMusic; 
 SoundFile battleMusic;
 
+float musicRate = 1;
+float MAX_MUSIC_RATE = 2;
+float MUSIC_ACCELERATION = 0.00006;
+
 GameMenu menu;
 GameOverScreen gameOverScreen;
 
@@ -58,4 +62,13 @@ void draw(){
   }
   
 }
-}
+
+void runGame(){
+  fill(255);
+  textSize(16);
+  
+    if(gameState == 1) {
+    musicRate += MUSIC_ACCELERATION;
+    musicRate = constrain(musicRate, 1, MAX_MUSIC_RATE);
+    battleMusic.rate(musicRate);
+  }
