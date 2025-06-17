@@ -52,3 +52,14 @@ class GameMenu {
     textAlign(CENTER, CENTER);
     text("START GAME", 200, buttonY + buttonH/2);
   }
+  
+  
+  void checkMouseOverButton() {
+    if (mouseX > buttonX && mouseX < buttonX + buttonW && mouseY > buttonY && mouseY < buttonY + buttonH) {
+      mouseIsOverButton = true;
+    } 
+    else {
+      mouseIsOverButton = false;
+    }
+  }
+}
